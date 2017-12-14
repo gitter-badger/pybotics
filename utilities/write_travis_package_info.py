@@ -33,5 +33,5 @@ if __name__ == '__main__':
     version_path = current_path / 'VERSION'
     logging.info('Version path: {}'.format(version_path.resolve()))
 
-    with open(version_path, 'w') as f:
+    with open(str(version_path), 'w') as f:
         f.write(version)
